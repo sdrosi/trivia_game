@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang = "en-us">
+    <head>
+        <title>Trivia Game</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    </head>
+    <body>
+            <div class="jumbotron jumbotron-fluid" id="main">
+                    <div class="container">
+                            <div id="instructions"><h2>So you say you're artsy, eh?</h2></div>
+                            <button id="start">Start!</button>
+                            <div id="timer"></div>
+                            <div id="questions"></div>
+                            <hr>
+                            <div class="row">
+                                <div id="answer-option1" class="answer"></div>
+                                <button class="guess" id="button1" value="0">A</button>
+                            </div>
+                           <div class="row">
+                                <div id="answer-option2" class="answer"></div>
+                                <button class="guess" id="button2" value="1">B</button>
+                            </div>
+                            <div class="row">
+                                <div id="answer-option3" class="answer"></div>
+                                <button class="guess" id="button3" value="2">C</button>
+                            </div>
+                            <div class="row">
+                                <div id="answer-option4" class="answer"></div>
+                                <button class="guess" id="button4" value="3">D</button>
+                            </div>
+                            <div id="results"></div>
+                    </div>
+                  </div>
+        
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script type="text/javascript" src="assets/javascript/app.js"></script>    
+    </body>
+</html>

@@ -1,0 +1,18 @@
+.container {
+    background-color: lightgreen;
+}
+
+#main {
+    background-color: khaki;
+}
+
+.answer {
+    padding-left: 20px;
+    margin-bottom: 10px;
+}
+
+.guess {
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
