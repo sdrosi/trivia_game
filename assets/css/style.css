@@ -52,7 +52,7 @@ h1 {
     font-size: 26px;
 }
 
-h2 {
+.h2, h2 {
     text-align: center;
 }
 
