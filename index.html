@@ -5,32 +5,42 @@
         <meta charset="UTF-8">
         <link rel="stylesheet" type="text/css" href="assets/css/style.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=News+Cycle" rel="stylesheet">
     </head>
-    <body>
+    <body class="everything">
             <div class="jumbotron jumbotron-fluid" id="main">
                     <div class="container">
-                            <div id="instructions"><h2>So you say you're artsy, eh?</h2></div>
-                            <button id="start">Start!</button>
-                            <div id="timer"></div>
-                            <div id="questions"></div>
+                            <div id="title"><h2>So you say you're artsy, eh?</h2></div>
                             <hr>
+                            <div id="instructions"><h3>Let's test your knowledge of modern art! To begin or restart, press the 'Let's Play!' button. Answer the question before the timer runs out. If you get stuck, no worries, the game will move on to the next question automatically when time ends. Have fun!</h3>
+                            <br>
                             <div class="row">
-                                <div id="answer-option1" class="answer"></div>
-                                <button class="guess" id="button1" value="0">A</button>
+                                <div class="col-3"></div>
+                                <button id="start" class="col-5"><h4>Let's Play!</h4></button>
+                                <div class="col-4"></div>
                             </div>
-                           <div class="row">
-                                <div id="answer-option2" class="answer"></div>
-                                <button class="guess" id="button2" value="1">B</button>
+                            <hr>
+                            <div class="row" id="scoreBoard">
+                                <div class= "col-3" id="timer"></div>
+                                <div class= "col-3" id="correct"></div>
+                                <div class= "col-3" id="incorrect"></div>
+                                <div class= "col-3" id="missed"></div>
                             </div>
-                            <div class="row">
-                                <div id="answer-option3" class="answer"></div>
-                                <button class="guess" id="button3" value="2">C</button>
                             </div>
-                            <div class="row">
-                                <div id="answer-option4" class="answer"></div>
-                                <button class="guess" id="button4" value="3">D</button>
+                                <div class="answer-container">
+                                    <div id="questions"></div>
+                                        <hr>
+                                    <div id= "answers" class="row">
+                                        <button class="guess col-5" id="answer-option1" value="0"></button>
+                                        <button class="guess col-5" id="answer-option2" value="1"></button>
+                                    </div>
+                                    <div id= "answers" class="row">
+                                        <button class="guess col-5" id="answer-option3" value="2"></button>
+                                        <button class="guess col-5" id="answer-option4" value="3"></button>
+                                    </div> 
+                                    </div> 
                             </div>
-                            <div id="results"></div>
+                            <div id="results"><h2>Great work, artist! How'd you do??</h2></div>
                     </div>
                   </div>
         

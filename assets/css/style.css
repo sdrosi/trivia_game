@@ -1,9 +1,12 @@
 .container {
-    background-color: lightgreen;
+    background-color:  rgba(224, 224, 224, 0);
+    border-width: 10px;
+    
 }
 
 #main {
-    background-color: khaki;
+    background-color: rgba(255, 255, 255, 0); 
+    ;
 }
 
 .answer {
@@ -14,5 +17,38 @@
 .guess {
     margin-left: 10px;
     margin-bottom: 10px;
+}
+
+.everything {
+    background-image: url("../images/steinar-engeland-157884-unsplash.jpg");
+    background-size: 100%;
+    font-family: 'News Cycle', sans-serif;
+
+}
+
+.h2, h2 {
+    padding-top: 25px;
+    text-align: center;
+    font-size: 3rem;
+}
+
+#timer {
+    color: black;
+}
+
+#correct {
+    color: green;
+}
+
+#incorrect {
+    color :red;
+}
+
+#missed {
+    color: teal;
+}
+
+.guess {
+    font-size: 26px;
 }
 
