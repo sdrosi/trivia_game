@@ -1,5 +1,5 @@
 //variables
-var seconds = 21;
+var seconds = 13;
 var countDown;
 var correct = 0;
 var incorrect = 0;
@@ -63,6 +63,7 @@ $(document).ready(function() {
 });
 
 //set ip game with empty arrays, initialize first question
+//should have made a reset button that would have cleared the scoreBoard when a new game was initialized
 function setGame() {
     $("questions").empty();
     $("#results").hide();
@@ -72,9 +73,9 @@ function setGame() {
     missed = 0;
     currentQuestion = 0;
     answered = 0;
-    seconds = 21;
+    seconds = 13;
     addQues();
-    };
+};
 
 
 
@@ -86,13 +87,14 @@ function addQues() {
     $("#scoreBoard").show();
     $("#questions").html("<h3>" + questionOptions[currentQuestion].question + "</h3>");
 //add answer options to id answer-options
+//could make this more efficient with a for loop
     $("#answer-option1").html(questionOptions[currentQuestion].options[0]);
     $("#answer-option2").html(questionOptions[currentQuestion].options[1]);
     $("#answer-option3").html(questionOptions[currentQuestion].options[2]);
     $("#answer-option4").html(questionOptions[currentQuestion].options[3]);
     choice = questionOptions[currentQuestion].answer;
     timer();
-    seconds = 21;}
+    seconds = 13;}
     //if current question === 7 end game
     else {
         endGame();
@@ -105,7 +107,7 @@ function addQues() {
 // function addUserGuessClickHandler() {
     $(".guess").on("click", function() {
         clearInterval(countDown);
-        seconds = 21;
+        seconds = 13;
         console.log("You clicked me!");
         console.log(this.value);
         userGuess = this.value;
@@ -121,7 +123,7 @@ function addQues() {
         else {
             incorrect++;
             clearInterval(countDown);
-            seconds = 21;
+            seconds = 13;
             console.log("nope: " + incorrect);
             currentQuestion++;
             $("#incorrect").html("<h4>Incorrect: " + incorrect + "</h4>");
